@@ -128,7 +128,15 @@ img:active {
 
 		<center>
 				<div role="header" class="header" style="margin-top: 6px">
-					<center><img src="media/image/main.png" style="width: 97%" alt="Responsive image"></center>
+					<center><img onclick="HIplay()" ontouchstart="HIplay()" src="media/image/main.png" style="width: 97%" alt="Responsive image"></center>
+
+
+						<audio id="hi" hidden="true" src="media/audio/welcome.mp3" type="audio/mp3"> </audio>
+						  <script>
+							  var hiplay = document.getElementById("hi");
+							  function HIplay() {hiplay.play();}
+						  </script> 
+
 				</div><!-- /content -->
 
 
@@ -136,7 +144,15 @@ img:active {
 
 					
 
-					<a href="#letter_A" data-transition="pop" ><button onclick="pootplay()" class="btn-block next-btn texts " style="width:185px; height: 60px;border: 1px solid #6a2d65; margin-bottom: 5px"> START </button></a>
+					<a href="#letter_A" data-transition="pop" ><button onclick="Startplay()" class="btn-block next-btn texts " style="width:185px; height: 60px;border: 1px solid #6a2d65; margin-bottom: 5px"> START </button></a>
+
+
+						<audio id="start" hidden="true" src="media/audio/start.mp3" type="audio/mp3"> </audio>
+						  <script>
+							  var startplay = document.getElementById("start");
+							  function Startplay() {startplay.play();}
+						  </script> 
+
 
 					<br>
 					<a href="#crzn_help" data-transition="flip" ><button onclick="pootplay()" class="next-btn texts" style="width:185px; height: 60px;border: 1px solid #6a2d65;margin-bottom: 5px"> HOW </button></a>
@@ -174,7 +190,7 @@ img:active {
 	</div>
 
 	<center>
-		<a href="#main_menu"><button onclick="pootplay()" class="btn-lg texts" style="background-color: green;-webkit-border-radius: 40px 0; border-radius: 40px 0;margin-top: 10px"> OK, got it!</button></a>
+		<a href="#main_menu"><button onclick="pootplay()" class="btn-lg texts" style="background-color: green;border-radius: 30%"> ⌂ </button></a>
 	</center>
 </div><!-- /page -->
 
@@ -192,7 +208,26 @@ img:active {
 <div data-role="page" id="crzn_about" style="border:1px solid black" class="main-bg">
 
 	<button class="btn-success btn btn-block" style="position: fixed; z-index: 1; margin-top: -5px" >About Developers</button>
-						
+	
+
+	<section>
+	  <div class="container" style="border-bottom:2px solid gray;background: rgba(226,226,226,.7);">
+		<div class="row align-items-center">
+			<div class="p-5">
+				<center>
+			  <img class="img-fluid " src="media/image/x.png" >
+			  	</center>
+			</div>
+
+			<div class="p-5">
+			  <h2 class="display-5">crzn.io</h2>
+			  <a href="http://crzn.tech.preview.services"><p style="font-weight: bolder;">https://crzn.tech.preview.services</p></a>
+			  <p>All Rights Reserved.</p>
+			</div>
+		</div>
+	  </div>
+	</section>
+
 	<section>
 	  <div class="container" style="border-bottom:2px solid gray; background: rgba(226,226,226,.7); ">
 		<div class="row align-items-center">
@@ -225,6 +260,8 @@ img:active {
 			  <h2 class="display-5">FRENOLE VERSE</h2>
 			  <p style="font-weight: bolder;">Graphic Artist</p>
 			  <p>All illustrations of animals used in this app are originally made by Frenole Verse and are copyrighted.</p>
+			  <a href="https://twitter.com/furinoru"><p> @furinoru </p></a>
+
 			</div>
 		  </div>
 		</div>
@@ -243,6 +280,7 @@ img:active {
 			<div class="p-5">
 			  <h2 class="display-5">MILCAH MILA</h2>
 			  <p style="font-weight: bolder;">Female Voice Actress</p>
+			  <a href="https://www.facebook.com/LeLu.Mila"><p> https://www.facebook.com/LeLu.Mila</p></a>
 			</div>
 		  </div>
 		</div>
@@ -250,7 +288,7 @@ img:active {
 	</section>
 
 	<center>
-		<a href="#main_menu"><button onclick="pootplay()" class="btn-lg btn-block texts" style="background-color: green;-webkit-border-radius: 40px 0; border-radius: 40px 0"> Home</button></a>
+		<a href="#main_menu"><button onclick="pootplay()" class="btn-lg texts" style="background-color: green;border-radius: 30%"> ⌂ </button></a>
 	</center>
 
 </div><!-- /page -->
